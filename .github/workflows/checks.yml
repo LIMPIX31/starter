@@ -1,0 +1,37 @@
+name: "🔷 Checks"
+on:
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  lint-frontend:
+    name: "📄 Lint"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: "☁️ Checkout"
+        uses: actions/checkout@v3
+      - name: "🔧 Setup node"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19.x
+      - name: "📦 Install deps"
+        run: yarn
+      - name: "💠 Lint"
+        run: yarn lint
+  prebuild-frontend:
+    name: "🛠 Typecheck"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: "☁️ Checkout"
+        uses: actions/checkout@v3
+      - name: "🔧 Setup node"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19.x
+      - name: "📦 Install deps"
+        run: yarn
+      - name: "💠 Typecheck"
+        run: yarn typecheck
+
