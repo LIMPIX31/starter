@@ -12,7 +12,12 @@ export const List: FC = () => {
     <Layout gap='12px' flexDirection='column'>
       <AppendTodoPane />
       {todos.map((todo, idx) => (
-        <TodoCard ord={idx} content={todo.content} actions={[<RemoveTodoButton id={todo.id} key={'remove'} />]} key={idx} />
+        <TodoCard
+          ord={idx}
+          content={todo.content}
+          actions={[<RemoveTodoButton id={todo.id} key='remove' />]}
+          key={todo.id}
+        />
       ))}
     </Layout>
   )

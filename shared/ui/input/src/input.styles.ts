@@ -9,6 +9,6 @@ export const styles: StyleFn = ({ theme }) => ({
   borderColor: theme.gray,
   fontFamily: theme.sansFont,
   ':focus': {
-    borderColor: theme.primary
-  }
+    borderColor: theme.primary,
+  },
 })

@@ -17,7 +17,9 @@ export const Pane: FC = () => {
   return (
     <Row gap='6px'>
       <Input value={content} onChange={({ target }) => setContent(target.value)} />
-      <Button disabled={isEmpty} primary onClick={append}>Добавить</Button>
+      <Button disabled={isEmpty} primary onClick={() => append()}>
+        Добавить
+      </Button>
     </Row>
   )
 }

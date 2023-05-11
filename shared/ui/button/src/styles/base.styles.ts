@@ -6,7 +6,7 @@ const base: StyleFn = () => ({
   alignItems: 'center',
   justifyContent: 'center',
   borderStyle: 'solid',
-  cursor: 'pointer'
+  cursor: 'pointer',
 })
 
 const disabled: StyleFn = () => ({
@@ -14,7 +14,4 @@ const disabled: StyleFn = () => ({
   cursor: 'not-allowed',
 })
 
-export const baseStyles = combine(
-  base,
-  ifProp<ButtonProps>('disabled', disabled),
-)
+export const baseStyles = combine(base, ifProp<ButtonProps>('disabled', disabled))

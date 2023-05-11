@@ -79,7 +79,7 @@ const inline = css`
     position: relative;
     z-index: 1;
   }
-  
+
   #root {
     min-height: 100vh;
   }

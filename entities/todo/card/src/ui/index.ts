@@ -1,4 +1,1 @@
-export {
-  Card as TodoCard,
-  type CardProps as TodoCardProps,
-} from './card'
+export { Card as TodoCard, type CardProps as TodoCardProps } from './card'

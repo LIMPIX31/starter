@@ -13,11 +13,8 @@ const primary: StyleFn<ButtonProps> = ({ theme, destructive }) => {
   return {
     borderColor: color,
     backgroundColor: color,
-    color: 'white'
+    color: 'white',
   }
 }
 
-export const appearanceStyles = combine(
-  base,
-  ifProp<ButtonProps>('primary', primary)
-)
+export const appearanceStyles = combine(base, ifProp<ButtonProps>('primary', primary))
