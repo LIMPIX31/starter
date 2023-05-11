@@ -1,0 +1,19 @@
+{
+  "name": "@widgets/todo-list",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@entities/todo-card": "workspace:^",
+    "@features/append-todo": "workspace:^",
+    "@features/remove-todo": "workspace:^",
+    "@ui/layout": "workspace:^",
+    "effector": "^22.5.1",
+    "effector-react": "^22.5.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.6",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}

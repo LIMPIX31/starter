@@ -2,6 +2,7 @@
   "name": "@theme/provider",
   "main": "src/index.ts",
   "dependencies": {
+    "@theme/common": "workspace:^",
     "@theme/font": "workspace:^",
     "@theme/global": "workspace:^"
   },

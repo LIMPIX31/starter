@@ -19,6 +19,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@app/entrypoint@workspace:app/entrypoint"
   dependencies:
+    "@app/root": "workspace:^"
     "@types/react": "npm:^18.2.6"
     "@types/react-dom": "npm:^18.2.4"
     "@vitejs/plugin-react": "npm:^4.0.0"
@@ -41,7 +42,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@app/root@workspace:app/root":
+"@app/root@workspace:^, @app/root@workspace:app/root":
   version: 0.0.0-use.local
   resolution: "@app/root@workspace:app/root"
   dependencies:
@@ -59,6 +60,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@app/routes@workspace:app/routes"
   dependencies:
+    "@pages/home": "workspace:^"
     "@types/react": "npm:^18.2.6"
     react: "npm:^18.2.0"
     react-router-dom: "npm:^6.11.1"
@@ -492,6 +494,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@entities/todo-card@workspace:^, @entities/todo-card@workspace:entities/todo/card":
+  version: 0.0.0-use.local
+  resolution: "@entities/todo-card@workspace:entities/todo/card"
+  dependencies:
+    "@types/react": "npm:^18.2.6"
+    effector: "npm:^22.8.3"
+    react: "npm:^18.2.0"
+    styled: "workspace:^"
+  peerDependencies:
+    react: ^18.2.0
+  languageName: unknown
+  linkType: soft
+
 "@esbuild/android-arm64@npm:0.17.18":
   version: 0.17.18
   resolution: "@esbuild/android-arm64@npm:0.17.18"
@@ -688,6 +703,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@features/append-todo@workspace:^, @features/append-todo@workspace:features/todo/append":
+  version: 0.0.0-use.local
+  resolution: "@features/append-todo@workspace:features/todo/append"
+  dependencies:
+    "@entities/todo-card": "workspace:^"
+    "@types/react": "npm:^18.2.6"
+    "@ui/button": "workspace:^"
+    "@ui/input": "workspace:^"
+    "@ui/layout": "workspace:^"
+    react: "npm:^18.2.0"
+  peerDependencies:
+    react: 18
+  languageName: unknown
+  linkType: soft
+
+"@features/remove-todo@workspace:^, @features/remove-todo@workspace:features/todo/remove":
+  version: 0.0.0-use.local
+  resolution: "@features/remove-todo@workspace:features/todo/remove"
+  dependencies:
+    "@entities/todo-card": "workspace:^"
+    "@types/react": "npm:^18.2.6"
+    "@ui/button": "workspace:^"
+    react: "npm:^18.2.0"
+  peerDependencies:
+    react: ^18.2.0
+  languageName: unknown
+  linkType: soft
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -816,11 +859,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pages/home@workspace:pages/home":
+"@pages/home@workspace:^, @pages/home@workspace:pages/home":
   version: 0.0.0-use.local
   resolution: "@pages/home@workspace:pages/home"
   dependencies:
     "@types/react": "npm:^18.2.6"
+    "@ui/layout": "workspace:^"
+    "@widgets/todo-list": "workspace:^"
   peerDependencies:
     react: 18
   languageName: unknown
@@ -949,7 +994,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@theme/common@workspace:shared/theme/common":
+"@theme/common@workspace:^, @theme/common@workspace:shared/theme/common":
   version: 0.0.0-use.local
   resolution: "@theme/common@workspace:shared/theme/common"
   dependencies:
@@ -990,6 +1035,7 @@ __metadata:
   resolution: "@theme/provider@workspace:shared/theme/provider"
   dependencies:
     "@emotion/react": "npm:^11.11.0"
+    "@theme/common": "workspace:^"
     "@theme/font": "workspace:^"
     "@theme/global": "workspace:^"
     "@types/react": "npm:^18.2.6"
@@ -1205,6 +1251,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ui/button@workspace:^, @ui/button@workspace:shared/ui/button":
+  version: 0.0.0-use.local
+  resolution: "@ui/button@workspace:shared/ui/button"
+  dependencies:
+    "@types/react": "npm:^18.2.6"
+    react: "npm:^18.2.0"
+    styled: "workspace:^"
+  peerDependencies:
+    react: 18
+  languageName: unknown
+  linkType: soft
+
+"@ui/input@workspace:^, @ui/input@workspace:shared/ui/input":
+  version: 0.0.0-use.local
+  resolution: "@ui/input@workspace:shared/ui/input"
+  dependencies:
+    "@types/react": "npm:^18.2.6"
+    react: "npm:^18.2.0"
+    styled: "workspace:^"
+  peerDependencies:
+    react: 18
+  languageName: unknown
+  linkType: soft
+
+"@ui/layout@workspace:^, @ui/layout@workspace:shared/ui/layout":
+  version: 0.0.0-use.local
+  resolution: "@ui/layout@workspace:shared/ui/layout"
+  dependencies:
+    "@types/react": "npm:18.2.6"
+    react: "npm:^18.2.0"
+    styled: "workspace:^"
+  peerDependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@vitejs/plugin-react@npm:^4.0.0":
   version: 4.0.0
   resolution: "@vitejs/plugin-react@npm:4.0.0"
@@ -1218,6 +1300,23 @@ __metadata:
   checksum: e7ae0fad3d88c5ca259cd0b3819d5646e868d8661ef14e2d2a2ed35e128f81cc5027947000cc9982ac00120da777627924398e26f1163cce1a031a0ce125bf0e
   languageName: node
   linkType: hard
+
+"@widgets/todo-list@workspace:^, @widgets/todo-list@workspace:widgets/todo/list":
+  version: 0.0.0-use.local
+  resolution: "@widgets/todo-list@workspace:widgets/todo/list"
+  dependencies:
+    "@entities/todo-card": "workspace:^"
+    "@features/append-todo": "workspace:^"
+    "@features/remove-todo": "workspace:^"
+    "@types/react": "npm:18.2.6"
+    "@ui/layout": "workspace:^"
+    effector: "npm:^22.5.1"
+    effector-react: "npm:^22.5.1"
+    react: "npm:^18.2.0"
+  peerDependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
 
 "abbrev@npm:^1.0.0":
   version: 1.1.1
@@ -1795,6 +1894,25 @@ __metadata:
   dependencies:
     esutils: "npm:^2.0.2"
   checksum: 6b38a63fa66847d80e130bb85c83c173b1050037fffac3d5f740c8c691243d5b6fadc5ec502ae8297c474680d879eb24ad8ec7f901673704fe40c8dedc1bee62
+  languageName: node
+  linkType: hard
+
+"effector-react@npm:^22.5.1":
+  version: 22.5.1
+  resolution: "effector-react@npm:22.5.1"
+  dependencies:
+    use-sync-external-store: "npm:^1.0.0"
+  peerDependencies:
+    effector: ^22.0.2
+    react: ">=16.8.0 <19.0.0"
+  checksum: 29ad32514f373cfd1ae025082a784255f378210bcafc7df3476a96b9c903c0e2597fa4132b98f34a8d213a93402be24f8d4b6ffbfe7a5218ba53480064b417f9
+  languageName: node
+  linkType: hard
+
+"effector@npm:^22.5.1, effector@npm:^22.8.3":
+  version: 22.8.3
+  resolution: "effector@npm:22.8.3"
+  checksum: 9487796f92b164af79d79fbef787adfa7a41ca6488bff566fd248916980e6499aa2e84cc10ef855975844575217f02957b288eaf5ead4ae8f42839e1a25c5d2f
   languageName: node
   linkType: hard
 
@@ -4506,6 +4624,15 @@ __metadata:
   dependencies:
     punycode: "npm:^2.1.0"
   checksum: 284fedd1b11512a77e783bfd32b320a9af1f2e39fbfabf4d65d64122344a3f55b8d37ec0c77e0045f7467b99d24bd2c067c1224d74f5c76b069753c7276d8709
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.0.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: bed3d1f68ca3dd33647035dbeb9d3a5ece12fced0245cb0fa831426192e52e4948b0fc6e9187d9d4dce9f58269af605f8feeeda100d2928f8b865f9cd9cc4a4a
   languageName: node
   linkType: hard
 

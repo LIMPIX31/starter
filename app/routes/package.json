@@ -2,6 +2,7 @@
   "name": "@app/routes",
   "main": "src/index.tsx",
   "dependencies": {
+    "@pages/home": "workspace:^",
     "react-router-dom": "^6.11.1"
   },
   "devDependencies": {

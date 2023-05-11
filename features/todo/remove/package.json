@@ -1,0 +1,15 @@
+{
+  "name": "@features/remove-todo",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@entities/todo-card": "workspace:^",
+    "@ui/button": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}

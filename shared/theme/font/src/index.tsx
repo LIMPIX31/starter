@@ -1,5 +1,5 @@
 import { Global } from 'styled'
 import { FC } from 'react'
-import { monaFontFace } from './mona'
+import { slabFontFace } from './slab'
 
-export const FontStyles: FC = () => <Global styles={[monaFontFace]} />
+export const FontStyles: FC = () => <Global styles={[slabFontFace]} />

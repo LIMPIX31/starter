@@ -74,11 +74,14 @@ const inline = css`
     -webkit-user-drag: element;
   }
 
-  html,
   body {
     min-height: 100vh;
     position: relative;
     z-index: 1;
+  }
+  
+  #root {
+    min-height: 100vh;
   }
 
   img,

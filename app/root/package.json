@@ -1,6 +1,6 @@
 {
   "name": "@app/root",
-  "main": "src/index.ts",
+  "main": "src/index.tsx",
   "dependencies": {
     "@app/providers": "workspace:^",
     "@app/routes": "workspace:^"

@@ -36,6 +36,15 @@
       "@app/routes": [
         "app/routes"
       ],
+      "@entities/todo-card": [
+        "entities/todo/card"
+      ],
+      "@features/append-todo": [
+        "features/todo/append"
+      ],
+      "@features/remove-todo": [
+        "features/todo/remove"
+      ],
       "@pages/home": [
         "pages/home"
       ],
@@ -56,6 +65,18 @@
       ],
       "@theme/types": [
         "shared/theme/types"
+      ],
+      "@ui/button": [
+        "shared/ui/button"
+      ],
+      "@ui/input": [
+        "shared/ui/input"
+      ],
+      "@ui/layout": [
+        "shared/ui/layout"
+      ],
+      "@widgets/todo-list": [
+        "widgets/todo/list"
       ]
     }
   },

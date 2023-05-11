@@ -1,0 +1,14 @@
+{
+  "name": "@ui/input",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "react": "^18.2.0"
+  },
+  "dependencies": {
+    "styled": "workspace:^"
+  },
+  "peerDependencies": {
+    "react": "18"
+  }
+}
