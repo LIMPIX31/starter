@@ -1,0 +1,7 @@
+{
+  "name": "@theme/common",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@theme/types": "workspace:^"
+  }
+}

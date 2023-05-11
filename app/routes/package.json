@@ -1,0 +1,15 @@
+{
+  "name": "@app/routes",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "react-router-dom": "^6.11.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "18",
+    "react-dom": "18"
+  }
+}

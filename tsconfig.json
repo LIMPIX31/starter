@@ -22,9 +22,51 @@
     "isolatedModules": true,
     "noEmit": true,
     "baseUrl": "./",
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@app/entrypoint": [
+        "app/entrypoint"
+      ],
+      "@app/providers": [
+        "app/providers"
+      ],
+      "@app/root": [
+        "app/root"
+      ],
+      "@app/routes": [
+        "app/routes"
+      ],
+      "@pages/home": [
+        "pages/home"
+      ],
+      "styled": [
+        "shared/styled"
+      ],
+      "@theme/common": [
+        "shared/theme/common"
+      ],
+      "@theme/font": [
+        "shared/theme/font"
+      ],
+      "@theme/global": [
+        "shared/theme/global"
+      ],
+      "@theme/provider": [
+        "shared/theme/provider"
+      ],
+      "@theme/types": [
+        "shared/theme/types"
+      ]
+    }
   },
-  "include": ["src/**/*"],
+  "include": [
+    "app/**/*",
+    "pages/**/*",
+    "widgets/**/*",
+    "features/**/*",
+    "entities/**/*",
+    "shared/**/*"
+  ],
   "exclude": [
     "**/*.test.{ts,tsx}"
   ]
