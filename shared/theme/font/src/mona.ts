@@ -1,4 +1,4 @@
-import { StyleFn } from 'styled'
+import type { StyleFn } from '@lmpx/styled'
 import font from './assets/Mona-Sans.woff2'
 
 export const monaFontFace: StyleFn = () => ({

@@ -15,7 +15,7 @@
     "build": "yarn workspace @app/entrypoint build"
   },
   "devDependencies": {
-    "@lmpx-config/eslint": "0.0.4",
+    "@lmpx-config/eslint": "0.0.5",
     "@lmpx-config/prettier": "0.0.1",
     "eslint": "^8.40.0",
     "prettier": "^2.8.8",

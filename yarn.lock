@@ -19,6 +19,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@app/entrypoint@workspace:app/entrypoint"
   dependencies:
+    "@lmpx/styled": "npm:0.0.2"
     "@types/react": "npm:^18.2.6"
     "@types/react-dom": "npm:^18.2.4"
     "@vitejs/plugin-react": "npm:^4.0.0"
@@ -284,7 +285,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.20.7":
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.20.7":
   version: 7.21.5
   resolution: "@babel/runtime@npm:7.21.5"
   dependencies:
@@ -769,9 +770,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lmpx-config/eslint@npm:0.0.4":
-  version: 0.0.4
-  resolution: "@lmpx-config/eslint@npm:0.0.4"
+"@lmpx-config/eslint@npm:0.0.5":
+  version: 0.0.5
+  resolution: "@lmpx-config/eslint@npm:0.0.5"
   dependencies:
     "@typescript-eslint/eslint-plugin": "npm:^5.59.5"
     "@typescript-eslint/parser": "npm:^5.59.5"
@@ -784,7 +785,7 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^4.6.0"
     prettier: "npm:^2.8.8"
     react: "npm:^18.2.0"
-  checksum: d6a5112036a9a21d17b6b8320736815d4e381ed1d745f1156e3fe174481136d70457153197be26fcec6dc06688ff3e536cb552448795bbb69a1dd8a9ca83f3a9
+  checksum: 7568d6aec2cfb6b88e5f2a0a6a5458d4f7719b4e402cf01c40f450b60a215d4fcd8d622f468e7cf26bd9b412ac2ab0238346fd86124be6dfc41063ddf0205fe6
   languageName: node
   linkType: hard
 
@@ -794,6 +795,23 @@ __metadata:
   dependencies:
     prettier: "npm:^2.8.8"
   checksum: db5e448c029b5b30ad1789d9f8fc5eb675a459cb7ec32ffa66b2a6de9d192e88dd0bcd76d201e7692431a44dfb249d268de08f47ff47d33f207b9cfdec4e7729
+  languageName: node
+  linkType: hard
+
+"@lmpx/styled@npm:0.0.2":
+  version: 0.0.2
+  resolution: "@lmpx/styled@npm:0.0.2"
+  dependencies:
+    "@emotion/css": "npm:^11.11.0"
+    "@emotion/react": "npm:^11.11.0"
+    "@emotion/serialize": "npm:^1.1.2"
+    "@emotion/styled": "npm:^11.11.0"
+    polished: "npm:^4.2.2"
+    react: "npm:^18.2.0"
+    styled-system: "npm:^5.1.5"
+  peerDependencies:
+    react: 18
+  checksum: 7c00c77655a860539e430d3a65cf5d8a476487c2ac27f41e74a918c9a56d64bba04c3c06480bd5d9b0b96c8347fbc35991d12e63f0b409e332ebde6ed113192c
   languageName: node
   linkType: hard
 
@@ -989,10 +1007,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@theme/font@workspace:shared/theme/font"
   dependencies:
+    "@lmpx/styled": "npm:0.0.2"
     "@types/react": "npm:18.2.6"
-    styled: "workspace:^"
   peerDependencies:
-    react: "*"
+    "@lmpx/styled": 0.0.2
+    react: 18
   languageName: unknown
   linkType: soft
 
@@ -3688,6 +3707,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"polished@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "polished@npm:4.2.2"
+  dependencies:
+    "@babel/runtime": "npm:^7.17.8"
+  checksum: 4d89d22bdca4872551ccbc9702efec8d91958b04081da11046cc999cf79eb5d1e62e6008a943bcfc6e1a5264b652a547548a76df81332861b725e7f7c7ce8b1f
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^8.4.23":
   version: 8.4.23
   resolution: "postcss@npm:8.4.23"
@@ -4118,7 +4146,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "starter@workspace:."
   dependencies:
-    "@lmpx-config/eslint": "npm:0.0.4"
+    "@lmpx-config/eslint": "npm:0.0.5"
     "@lmpx-config/prettier": "npm:0.0.1"
     eslint: "npm:^8.40.0"
     prettier: "npm:^2.8.8"
@@ -4247,24 +4275,6 @@ __metadata:
   checksum: 3779f07e58e8c6729fd18e379be71977a3e4c8fce72e8d8a70d68eb1576922243ae7534070530998942685fe56a8f328e2c2fb1c68b3438a74d39fc7d23c9870
   languageName: node
   linkType: hard
-
-"styled@workspace:^, styled@workspace:shared/styled":
-  version: 0.0.0-use.local
-  resolution: "styled@workspace:shared/styled"
-  dependencies:
-    "@emotion/css": "npm:^11.11.0"
-    "@emotion/react": "npm:^11.11.0"
-    "@emotion/serialize": "npm:^1.1.2"
-    "@emotion/styled": "npm:^11.11.0"
-    "@theme/types": "workspace:^"
-    "@types/react": "npm:18.2.6"
-    "@types/styled-system": "npm:^5.1.16"
-    react: "npm:^18.2.0"
-    styled-system: "npm:^5.1.5"
-  peerDependencies:
-    react: "*"
-  languageName: unknown
-  linkType: soft
 
 "stylis@npm:4.2.0":
   version: 4.2.0
