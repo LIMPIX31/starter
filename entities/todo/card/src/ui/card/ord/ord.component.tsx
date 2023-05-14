@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { styled } from 'styled'
+import { styled } from '@lmpx/styled'
 import { OrdProps } from './ord.interface'
 import { styles } from './ord.styles'
 

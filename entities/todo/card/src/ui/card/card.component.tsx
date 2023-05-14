@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { styled } from 'styled'
+import { styled } from '@lmpx/styled'
 import { styles } from './card.styles'
 import { CardProps } from './card.interface'
 import { Ord } from './ord'

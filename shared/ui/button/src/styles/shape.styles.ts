@@ -1,4 +1,4 @@
-import { type StyleFn } from 'styled'
+import { type StyleFn } from '@lmpx/styled'
 
 export const shapeStyles: StyleFn = ({ theme }) => ({
   padding: '12px',

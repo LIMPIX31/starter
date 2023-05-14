@@ -1,4 +1,4 @@
-import { StyleFn } from 'styled'
+import { StyleFn } from '@lmpx/styled'
 import font from './assets/RobotoSlab.ttf'
 
 export const slabFontFace: StyleFn = () => ({

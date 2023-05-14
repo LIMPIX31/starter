@@ -1,4 +1,4 @@
-import { styled } from 'styled'
+import { styled } from '@lmpx/styled'
 import { ButtonProps } from './button.interface'
 import { styles } from './styles'
 
