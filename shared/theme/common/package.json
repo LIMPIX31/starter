@@ -3,5 +3,8 @@
   "main": "src/index.ts",
   "dependencies": {
     "@theme/types": "workspace:^"
+  },
+  "peerDependencies": {
+    "react": "18"
   }
 }

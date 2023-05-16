@@ -48,9 +48,6 @@
       "@pages/home": [
         "pages/home"
       ],
-      "styled": [
-        "shared/styled"
-      ],
       "@theme/common": [
         "shared/theme/common"
       ],

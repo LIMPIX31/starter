@@ -1,4 +1,12 @@
 {
   "name": "@theme/types",
-  "main": "src/index.ts"
+  "main": "src/styled.d.ts",
+  "typings": "src/styled.d.ts",
+  "devDependencies": {
+    "@emotion/react": "^11.11.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": "11",
+    "react": "18"
+  }
 }

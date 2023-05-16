@@ -2,11 +2,9 @@
   "name": "@ui/button",
   "main": "src/index.ts",
   "devDependencies": {
+    "@lmpx/styled": "0.0.5",
     "@types/react": "^18.2.6",
     "react": "^18.2.0"
-  },
-  "dependencies": {
-    "@lmpx/styled": "0.0.2"
   },
   "peerDependencies": {
     "@lmpx/styled": "*",

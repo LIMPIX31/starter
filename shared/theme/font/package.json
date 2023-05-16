@@ -2,11 +2,11 @@
   "name": "@theme/font",
   "main": "src/index.tsx",
   "devDependencies": {
-    "@lmpx/styled": "0.0.2",
+    "@lmpx/styled": "0.0.5",
     "@types/react": "18.2.6"
   },
   "peerDependencies": {
-    "@lmpx/styled": "0.0.2",
+    "@lmpx/styled": "*",
     "react": "18"
   }
 }
