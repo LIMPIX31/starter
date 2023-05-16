@@ -31,3 +31,8 @@ yarn typecheck
 ```bash
 yarn lint
 ```
+
+
+
+#### Настройка eslint в idea(webstorm)
+![image](https://github.com/LIMPIX31/starter/assets/81296950/48a998e8-bae2-4143-8d7c-ec418debd4da)
