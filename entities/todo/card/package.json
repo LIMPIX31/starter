@@ -5,7 +5,7 @@
     "effector": "^22.8.3"
   },
   "devDependencies": {
-    "@lmpx/styled": "0.0.5",
+    "@lmpx/styled": "0.0.6",
     "@types/react": "^18.2.6",
     "react": "^18.2.0"
   },

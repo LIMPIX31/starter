@@ -20,7 +20,7 @@ __metadata:
   resolution: "@app/entrypoint@workspace:app/entrypoint"
   dependencies:
     "@app/root": "workspace:^"
-    "@lmpx/styled": "npm:0.0.5"
+    "@lmpx/styled": "npm:0.0.6"
     "@types/react": "npm:^18.2.6"
     "@types/react-dom": "npm:^18.2.4"
     "@vitejs/plugin-react": "npm:^4.0.0"
@@ -499,7 +499,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@entities/todo-card@workspace:entities/todo/card"
   dependencies:
-    "@lmpx/styled": "npm:0.0.5"
+    "@lmpx/styled": "npm:0.0.6"
     "@types/react": "npm:^18.2.6"
     effector: "npm:^22.8.3"
     react: "npm:^18.2.0"
@@ -842,9 +842,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lmpx/styled@npm:0.0.5":
-  version: 0.0.5
-  resolution: "@lmpx/styled@npm:0.0.5"
+"@lmpx/styled@npm:0.0.6":
+  version: 0.0.6
+  resolution: "@lmpx/styled@npm:0.0.6"
   dependencies:
     "@emotion/css": "npm:^11.11.0"
     "@emotion/react": "npm:^11.11.0"
@@ -856,7 +856,7 @@ __metadata:
     styled-system: "npm:^5.1.5"
   peerDependencies:
     react: 18
-  checksum: d4533707c22772efc3cfbf416ca40dd39d799a1384d45d0ae4dc62ae2254a8ef464e5e5af57b54ddd2ca107de06c73f3e4da3288f359c885ca263f7f3f48e8d9
+  checksum: 948088cfa759f3a61da7f7458ff3e52c8ce7c76d7d7db209285f7c1ca2a04878920818dbf6bc37258a160c2c9cc13088ddcf12d9883158b630236a1a839f341b
   languageName: node
   linkType: hard
 
@@ -1056,7 +1056,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@theme/font@workspace:shared/theme/font"
   dependencies:
-    "@lmpx/styled": "npm:0.0.5"
+    "@lmpx/styled": "npm:0.0.6"
     "@types/react": "npm:18.2.6"
   peerDependencies:
     "@lmpx/styled": "*"
@@ -1311,7 +1311,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/button@workspace:shared/ui/button"
   dependencies:
-    "@lmpx/styled": "npm:0.0.5"
+    "@lmpx/styled": "npm:0.0.6"
     "@types/react": "npm:^18.2.6"
     react: "npm:^18.2.0"
   peerDependencies:
@@ -1324,7 +1324,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/input@workspace:shared/ui/input"
   dependencies:
-    "@lmpx/styled": "npm:0.0.5"
+    "@lmpx/styled": "npm:0.0.6"
     "@types/react": "npm:^18.2.6"
     react: "npm:^18.2.0"
   peerDependencies:
@@ -1337,7 +1337,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/layout@workspace:shared/ui/layout"
   dependencies:
-    "@lmpx/styled": "npm:0.0.5"
+    "@lmpx/styled": "npm:0.0.6"
     "@types/react": "npm:18.2.6"
     react: "npm:^18.2.0"
   peerDependencies:
