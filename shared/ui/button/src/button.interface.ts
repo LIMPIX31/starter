@@ -5,7 +5,3 @@ export interface ButtonProps extends PropsWithChildren {
   primary?: boolean
   destructive?: boolean
 }
-
-declare module '@lmpx/styled' {
-  interface Props extends ButtonProps {}
-}

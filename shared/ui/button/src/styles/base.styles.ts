@@ -1,7 +1,7 @@
 import { combine, ifProp, type StyleFn } from '@lmpx/styled'
-import '../button.interface'
+import type { ButtonProps } from '../button.interface'
 
-const base: StyleFn = () => ({
+const base: StyleFn<ButtonProps> = () => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -9,9 +9,9 @@ const base: StyleFn = () => ({
   cursor: 'pointer',
 })
 
-const disabled: StyleFn = () => ({
+const disabled: StyleFn<ButtonProps> = () => ({
   opacity: '50%',
   cursor: 'not-allowed',
 })
 
-export const baseStyles = combine(base, ifProp('disabled', disabled))
+export const baseStyles = combine(base, ifProp<ButtonProps>('disabled', disabled))
