@@ -87,13 +87,5 @@
   ],
   "exclude": [
     "**/*.test.{ts,tsx}"
-  ],
-  "references": [
-    {
-      "path": "shared/ui/button"
-    },
-    {
-      "path": "shared/ui/input"
-    }
   ]
 }
